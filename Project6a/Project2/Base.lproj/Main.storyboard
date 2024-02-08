@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iq2-r7-v3E">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Jv-Bg-jiv">
+                                <rect key="frame" x="107" y="100" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0Jv-Bg-jiv" secondAttribute="height" multiplier="2:1" id="7IE-Lh-9bc"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="estonia">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="puk-h4-5UD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3az-80-iFb">
+                                <rect key="frame" x="107" y="360" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3az-80-iFb" secondAttribute="height" multiplier="2:1" id="a72-oi-ejL"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="estonia"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5hy-l3-Xwb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ol-Fi-sbQ">
+                                <rect key="frame" x="107" y="230" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0ol-Fi-sbQ" secondAttribute="height" multiplier="2:1" id="rNq-zB-Bo9"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="estonia"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G56-85-YfD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0ol-Fi-sbQ" firstAttribute="top" secondItem="0Jv-Bg-jiv" secondAttribute="bottom" constant="30" id="9S0-7K-Dtg"/>
+                            <constraint firstItem="0Jv-Bg-jiv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="9dC-sa-e0T"/>
+                            <constraint firstItem="3az-80-iFb" firstAttribute="height" secondItem="0ol-Fi-sbQ" secondAttribute="height" id="Cm6-UR-52W"/>
+                            <constraint firstItem="0Jv-Bg-jiv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Qqh-x0-vWq"/>
+                            <constraint firstItem="0ol-Fi-sbQ" firstAttribute="centerX" secondItem="0Jv-Bg-jiv" secondAttribute="centerX" id="SDc-kw-yxj"/>
+                            <constraint firstItem="3az-80-iFb" firstAttribute="top" secondItem="0ol-Fi-sbQ" secondAttribute="bottom" constant="30" id="dxJ-B0-i2A"/>
+                            <constraint firstItem="3az-80-iFb" firstAttribute="centerX" secondItem="0ol-Fi-sbQ" secondAttribute="centerX" id="mU5-P2-inx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3az-80-iFb" secondAttribute="bottom" constant="20" id="rQd-oH-ffS"/>
+                            <constraint firstItem="0ol-Fi-sbQ" firstAttribute="height" secondItem="0Jv-Bg-jiv" secondAttribute="height" id="zhk-rt-DRH"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="G8V-Rw-FgV">
+                        <barButtonItem key="rightBarButtonItem" title="Score" id="3ue-oD-jMg">
+                            <connections>
+                                <action selector="scoreButtonTapped:" destination="BYZ-38-t0r" id="BcA-mC-H41"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="button1" destination="0Jv-Bg-jiv" id="tWF-0N-2Cs"/>
+                        <outlet property="button2" destination="0ol-Fi-sbQ" id="VCB-cZ-bvX"/>
+                        <outlet property="button3" destination="3az-80-iFb" id="hYN-bE-9Kp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="946.37681159420299" y="3.3482142857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yqi-Et-EXt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iq2-r7-v3E" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TpM-er-lCc">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="A3K-bb-vKT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gul-Nl-dPZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36.231884057971016" y="3.3482142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="estonia" width="200" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
