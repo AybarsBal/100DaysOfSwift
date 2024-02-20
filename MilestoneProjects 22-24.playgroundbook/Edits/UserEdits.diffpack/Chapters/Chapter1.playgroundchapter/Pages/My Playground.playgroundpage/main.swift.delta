@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import UIKit
+
+extension UIView {
+    func bounceOut(duration: TimeInterval) {
+        UIView.animate(withDuration: duration, delay: 0, animations: {
+            self.transform = CGAffineTransform(scaleX: 0.0001, y: 0.0001)
+        })
+    }
+}
+
+
+extension Int {
+    func times() {
+        guard self &gt; 0 else { return }
+        
+        for _ in 0..&lt;self {
+            print("Hello")
+        }
+    }
+}
+
+
+extension Array where Element: Comparable {
+    mutating func remove(item: Element) {
+        var itemCount = 0
+        for i in self {
+            if item == i { itemCount += 1}
+        }
+        if itemCount &gt; 1 {
+            if let location = self.firstIndex(of: item) {
+                self.remove(at: location)
+            }
+        }
+    }
+}
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 750}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

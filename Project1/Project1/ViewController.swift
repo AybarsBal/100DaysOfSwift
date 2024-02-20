@@ -20,7 +20,6 @@ class ViewController: UITableViewController {
         
         loadData()
         
-        
         let defaults = UserDefaults.standard
         
         if let countsData = defaults.value(forKey: "savedCounts") as? Data {
@@ -32,7 +31,6 @@ class ViewController: UITableViewController {
                 print("Count loadding error")
             }
         }
-        
         print(pictures)
     }
     
