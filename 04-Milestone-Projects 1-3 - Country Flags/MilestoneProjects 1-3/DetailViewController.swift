@@ -16,7 +16,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = currentTitle
+        title = currentTitle.capitalized
         
         let popBack = UIAction { _ in
             self.navigationController?.popToRootViewController(animated: true)

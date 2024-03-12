@@ -15,6 +15,8 @@ class MainViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Country Flags"
+        
         countries = ["estonia", "france", "germany", "ireland", "italy", "monaco", "nigeria", "poland", "spain", "russia", "uk", "us"]
     }
 
@@ -24,8 +26,11 @@ class MainViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TableViewCell else { fatalError() }
-        cell.countryLabel.text = countries[indexPath.row]
+        cell.countryLabel.text = countries[indexPath.row].capitalized
         cell.counrtyImage.image = UIImage(named: countries[indexPath.row])
+        
+        cell.counrtyImage.layer.borderWidth = 1
+        cell.counrtyImage.layer.borderColor = UIColor.lightGray.cgColor
         return cell
     }
     

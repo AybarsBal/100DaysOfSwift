@@ -17,35 +17,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="115" id="XmF-U8-3kJ" customClass="TableViewCell" customModule="MilestoneProjects_1_3" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="414" height="115"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="106" id="XmF-U8-3kJ" customClass="TableViewCell" customModule="MilestoneProjects_1_3" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="414" height="106"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XmF-U8-3kJ" id="ucy-2T-7Oj">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="115"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="106"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JFc-1M-vrc">
-                                            <rect key="frame" x="20" y="7" width="140" height="101"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="estonia" translatesAutoresizingMaskIntoConstraints="NO" id="JFc-1M-vrc">
+                                            <rect key="frame" x="20" y="18" width="140" height="70"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="100" id="H3A-Qf-3ek"/>
-                                                <constraint firstAttribute="width" constant="140" id="Lvz-LX-Htb"/>
+                                                <constraint firstAttribute="width" constant="140" id="HSh-kh-WMi"/>
+                                                <constraint firstAttribute="height" constant="70" id="fRR-qC-fU7"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="nMx-mJ-dka"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFK-5S-rat">
-                                            <rect key="frame" x="168" y="36" width="226" height="42"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFK-5S-rat">
+                                            <rect key="frame" x="168" y="32" width="226" height="42"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="yFK-5S-rat" firstAttribute="trailing" secondItem="ucy-2T-7Oj" secondAttribute="trailingMargin" id="2GI-vc-FyZ"/>
-                                        <constraint firstItem="JFc-1M-vrc" firstAttribute="centerY" secondItem="yFK-5S-rat" secondAttribute="centerY" id="Lz2-wt-bSK"/>
-                                        <constraint firstItem="JFc-1M-vrc" firstAttribute="top" secondItem="ucy-2T-7Oj" secondAttribute="topMargin" constant="-4" id="NpW-xs-5pF"/>
-                                        <constraint firstItem="yFK-5S-rat" firstAttribute="leading" secondItem="JFc-1M-vrc" secondAttribute="trailing" constant="8" id="hTm-dC-Ezd"/>
-                                        <constraint firstItem="JFc-1M-vrc" firstAttribute="centerY" secondItem="ucy-2T-7Oj" secondAttribute="centerY" id="hY2-I1-dVj"/>
-                                        <constraint firstItem="yFK-5S-rat" firstAttribute="top" secondItem="ucy-2T-7Oj" secondAttribute="topMargin" constant="25" id="kfG-0q-i0b"/>
-                                        <constraint firstItem="JFc-1M-vrc" firstAttribute="leading" secondItem="ucy-2T-7Oj" secondAttribute="leadingMargin" id="rhC-5j-Kof"/>
+                                        <constraint firstItem="yFK-5S-rat" firstAttribute="trailing" secondItem="ucy-2T-7Oj" secondAttribute="trailingMargin" id="3fd-rG-ND5"/>
+                                        <constraint firstItem="JFc-1M-vrc" firstAttribute="centerY" secondItem="ucy-2T-7Oj" secondAttribute="centerY" id="5Jb-Tk-5QR"/>
+                                        <constraint firstItem="yFK-5S-rat" firstAttribute="top" secondItem="ucy-2T-7Oj" secondAttribute="topMargin" constant="21" id="CaI-fs-TDS"/>
+                                        <constraint firstItem="yFK-5S-rat" firstAttribute="leading" secondItem="JFc-1M-vrc" secondAttribute="trailing" constant="8" id="fx1-ko-S0I"/>
+                                        <constraint firstItem="JFc-1M-vrc" firstAttribute="leading" secondItem="ucy-2T-7Oj" secondAttribute="leadingMargin" id="t5b-ZR-G4c"/>
+                                        <constraint firstItem="JFc-1M-vrc" firstAttribute="centerY" secondItem="yFK-5S-rat" secondAttribute="centerY" id="wbg-Ez-nQD"/>
+                                        <constraint firstItem="JFc-1M-vrc" firstAttribute="top" secondItem="ucy-2T-7Oj" secondAttribute="topMargin" constant="7" id="zHr-0v-gA9"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -116,6 +117,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="estonia" width="200" height="100"/>
         <image name="germany" width="200" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
