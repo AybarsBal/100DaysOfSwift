@@ -57,12 +57,13 @@ class ViewController: UITableViewController {
                 self.tableView.insertRows(at: [indexPath], with: .automatic)
             }
         }))
+        ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         present(ac, animated: true)
     }
     
     @objc func clearList() {
-        let ac = UIAlertController(title: "Warning", message: "List will be clear, are you sure?", preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "Delete", style: .default, handler: { _ in
+        let ac = UIAlertController(title: "Clear List", message: "List will be clear, are you sure?", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Clear", style: .destructive, handler: { _ in
             self.shoppingList.removeAll()
             self.save()
             self.tableView.reloadData()
