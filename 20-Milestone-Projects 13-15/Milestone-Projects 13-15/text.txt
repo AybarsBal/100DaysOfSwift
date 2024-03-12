@@ -1,0 +1,143 @@
+Republic of Estonia:
+Capital: Tallinn
+Demonym(s): Estonian
+Official Language: Estonian
+Area: 45,335 km2
+Population: 1,373,101
+Time Zone: UTC+02:00 (EET)
+Summer(DST): UTC+03:00 (EEST)
+Currency: Euro(€)(EUR)
+Calling Code: +372
+ISO 3166 Code: EE
+Internet TLD: .ee
+-
+French Republic:
+Capital: Paris
+Demonym(s): French
+Official Language: French
+Area: 643,801 km2
+Population: 68,373,433
+Time Zone: UTC+1 (CET)
+Summer(DST): UTC+2 (CEST)
+Currency: Euro(€)(EUR)
+Calling Code: +33
+ISO 3166 Code: FR
+Internet TLD: .fr
+-
+Federal Republic of Germany:
+Capital: Berlin
+Demonym(s): German
+Official Language: German
+Area: 357,600 km2
+Population: 84,607,016
+Time Zone: UTC+1 (CET)
+Summer(DST): UTC+2 (CEST)
+Currency: Euro(€)(EUR)
+Calling Code: +49
+ISO 3166 Code: DE
+Internet TLD: .de
+-
+Republic of Ireland:
+Capital: Dublin
+Demonym(s): Irish
+Official Language: Irish, English
+Area: 70,273 km2
+Population: 5,281,600
+Time Zone: UTC (GMT)
+Summer(DST): UTC+1 (IST)
+Currency: Euro(€)(EUR)
+Calling Code: +353
+ISO 3166 Code: IE
+Internet TLD: .ie
+-
+Italian Republic:
+Capital: Rome
+Demonym(s): Italian
+Official Language: Italian
+Area: 301,340 km2
+Population: 58,853,482
+Time Zone: UTC+1 (CET)
+Summer(DST): UTC+2 (CEST)
+Currency: Euro(€)(EUR)
+Calling Code: +39
+ISO 3166 Code: IT
+Internet TLD: .it
+-
+Principality of Monaco:
+Capital: Monaco
+Demonym(s): Monégasque, Monacan
+Official Language: French
+Area: 2.08 km2
+Population: 39,050
+Time Zone: UTC+1 (CET)
+Summer(DST): UTC+2 (CEST)
+Currency: Euro(€)(EUR)
+Calling Code: +337
+ISO 3166 Code: MC
+Internet TLD: .mc
+-
+Federal Republic of Nigeria:
+Capital: Abuja
+Demonym(s): Nigerian
+Official Language: English
+Area: 923,769 km2
+Population: 230,842,743
+Time Zone: UTC+01:00 (WAT)
+Currency: Naira(₦)(NGN)
+Calling Code: +234
+ISO 3166 Code: NG
+Internet TLD: .ng
+-
+Republic of Poland:
+Capital: Warsaw
+Demonym(s): Polish
+Official Language: Polish
+Area: 312,696 km2
+Population: 38,036,118
+Time Zone: UTC+1 (CET)
+Summer(DST): UTC+2 (CEST)
+Currency: Złoty(PLN)
+Calling Code: +48
+ISO 3166 Code: PL
+Internet TLD: .pl
+-
+Kingdom of Spain:
+Capital: Madrid
+Demonym(s): Spaniard, Spanish
+Official Language: Spanish
+Area: 505,994 km2
+Population: 48,592,909
+Time Zone: UTC⁠±0 to +1 (WET and CET)
+Summer(DST): UTC+1 to +2 (WEST and CEST)
+Currency: Euro(€)(EUR)
+Calling Code: +34
+ISO 3166 Code: ES
+Internet TLD: .es
+-
+United Kingdom of Great Britain:
+Capital: London
+Demonym(s): British, Briton, Brit
+Official Language: English
+Area: 244,376 km2
+Population: 67,026,292
+Time Zone: UTC (GMT)
+Summer(DST): UTC+1 (BST, WEST)
+Currency: Pound sterling(GBP)
+Calling Code: +44
+ISO 3166 Code: GB
+Internet TLD: .uk
+-
+United States of America:
+Capital: Washington, D.C.
+Demonym(s): American
+Official Language: None at the federal level
+Area: 9,833,520 km2
+Population: 334,914,895
+Time Zone: UTC−4 to −12, +10, +11
+Summer(DST): UTC−4 to −10
+Currency: U.S. dollar($)(USD)
+Calling Code: +1
+ISO 3166 Code: US
+Internet TLD: .us
+
+

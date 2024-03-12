@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hOV-Rq-qfd">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="VFX-pb-e5l">
+            <objects>
+                <collectionViewController id="tzU-Mj-GM3" customClass="ViewController" customModule="Milestone_Projects_28_30" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="hcm-AN-h6i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="7" minimumInteritemSpacing="7" id="e9W-hI-a01">
+                            <size key="itemSize" width="75" height="120"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="7" minY="7" maxX="7" maxY="7"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="3fF-FM-7qq" customClass="CardCell" customModule="Milestone_Projects_28_30" customModuleProvider="target">
+                                <rect key="frame" x="7" y="7" width="75" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Jw5-4h-btD">
+                                    <rect key="frame" x="0.0" y="0.0" width="75" height="120"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardBack" translatesAutoresizingMaskIntoConstraints="NO" id="6bf-Uc-mfd">
+                                            <rect key="frame" x="0.0" y="0.0" width="75" height="120"/>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animal10" translatesAutoresizingMaskIntoConstraints="NO" id="NGb-Kr-u7m">
+                                            <rect key="frame" x="0.0" y="0.0" width="75" height="120"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="NGb-Kr-u7m" secondAttribute="trailing" id="1eY-Ig-BPG"/>
+                                        <constraint firstItem="6bf-Uc-mfd" firstAttribute="leading" secondItem="Jw5-4h-btD" secondAttribute="leading" id="DkT-MY-N64"/>
+                                        <constraint firstItem="NGb-Kr-u7m" firstAttribute="leading" secondItem="Jw5-4h-btD" secondAttribute="leading" id="E3D-GA-CLW"/>
+                                        <constraint firstAttribute="trailing" secondItem="6bf-Uc-mfd" secondAttribute="trailing" id="FLM-Rk-560"/>
+                                        <constraint firstItem="NGb-Kr-u7m" firstAttribute="top" secondItem="Jw5-4h-btD" secondAttribute="top" id="PfE-Mp-WFr"/>
+                                        <constraint firstAttribute="bottom" secondItem="NGb-Kr-u7m" secondAttribute="bottom" id="WuZ-dq-Bdd"/>
+                                        <constraint firstAttribute="bottom" secondItem="6bf-Uc-mfd" secondAttribute="bottom" id="XMu-BK-gOu"/>
+                                        <constraint firstItem="6bf-Uc-mfd" firstAttribute="top" secondItem="Jw5-4h-btD" secondAttribute="top" id="w63-kV-3wp"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <connections>
+                                    <outlet property="backCardImage" destination="6bf-Uc-mfd" id="mhw-eY-vob"/>
+                                    <outlet property="cardImage" destination="NGb-Kr-u7m" id="9Rq-y0-zfE"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="tzU-Mj-GM3" id="geU-nr-QzG"/>
+                            <outlet property="delegate" destination="tzU-Mj-GM3" id="lYh-wV-22O"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="d11-Tn-ZTE"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bSv-Sc-yuv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1033.3333333333335" y="-21.428571428571427"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6bx-Im-bVp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hOV-Rq-qfd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6et-L5-q8X">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tzU-Mj-GM3" kind="relationship" relationship="rootViewController" id="vSE-HC-Cdr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="geN-dc-5Mi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="123.18840579710145" y="-21.428571428571427"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="animal10" width="25" height="40"/>
+        <image name="cardBack" width="62.5" height="89"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
