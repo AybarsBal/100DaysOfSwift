@@ -1,7 +1,0 @@
-ottowa: Capital of Canada
-london: Capital of England
-paris: Capital of France
-amsterdam: Capital of Netherlands
-madrid: Capital of Spain
-rome: Capital of Italy
-berlin: Capital of Germany
