@@ -14,6 +14,6 @@ UIButton, CALayer, UIColor, Random Numbers, IBActions, UIAlertController
 ## Screenshots
 
 ![screenshot1](screenshots/Screenshot1.png)
-![screenshot2](screenshots/screenshot2.png)
+![screenshot2](screenshots/Screenshot2.png)
 ![screenshot3](screenshots/Screenshot3.png)
 ![screenshot4](screenshots/Screenshot4.png)

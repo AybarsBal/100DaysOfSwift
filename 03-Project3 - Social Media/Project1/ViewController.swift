@@ -53,7 +53,7 @@ class ViewController: UITableViewController {
     // Challenge 2
     @objc func shareTapped() {
         let vc = UIActivityViewController(activityItems: ["""
-                                                          Download the awesome thunderview app in AppStore
+                                                          Download the thunderview app in AppStore
                                                           https://....
                                                           """],
                                           applicationActivities: [])
