@@ -3,7 +3,7 @@
 https://www.hackingwithswift.com/100/16
 
 ## Topics
-View controllers, Storyboard, FileManager
+View controllers, Storyboard, FileManager, IBOutlets, UIImage
 
 ## [Challenges](https://www.hackingwithswift.com/read/1/7/wrap-up):
 1. Use Interface Builder to select the text label inside your table view cell and adjust its font size to something larger – experiment and see what looks good.
