@@ -18,6 +18,7 @@ class DetailViewController: UIViewController, WKNavigationDelegate {
         webView = WKWebView()
         webView.navigationDelegate = self
         view = webView
+        
     }
     
     override func viewDidLoad() {
