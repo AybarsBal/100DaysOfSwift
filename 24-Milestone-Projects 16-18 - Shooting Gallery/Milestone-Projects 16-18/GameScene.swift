@@ -178,7 +178,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 finalScore.text = "New high score: \(score)"
                 highScore = score
                 save()
-            } else if score <= highScore {
+            } else {
                 finalScore.text = "Final score: \(score)"
                 scoreLabel.text = "High Score: \(highScore)"
             }
