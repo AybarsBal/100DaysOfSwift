@@ -18,7 +18,7 @@ class ViewController: UITableViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Credits", style: .plain, target: self, action: #selector(showCredits))
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self , action:#selector(filterResults))
         
-        performSelector(inBackground: #selector(fetchJSON), with: nil)
+        fetchJSON()
     }
     
     @objc func fetchJSON() {
@@ -66,6 +66,7 @@ class ViewController: UITableViewController {
                 self.tableView.reloadData()
             }
         }))
+        ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         present(ac, animated: true)
     }
     
