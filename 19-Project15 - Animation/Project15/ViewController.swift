@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         imageView.center = CGPoint(x: 512, y: 384)
         view.addSubview(imageView)
     }
-    
+    	
     @IBAction func tapped(_ sender: UIButton) {
         sender.isHidden = true
         
