@@ -16,7 +16,7 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "TravelMate"
+        title = "Country Facts"
         navigationController?.navigationBar.prefersLargeTitles = true
         
         loadText()
