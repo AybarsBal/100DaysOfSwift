@@ -1,9 +1,9 @@
-# Project 16 - Space Race
+# Project 17 - Space Race
 
 https://www.hackingwithswift.com/100/62
 
 ## Topics
-Pixel-Perfect Collision Detection, Timer, linearDamping, 
+Pixel-Perfect Collision Detection, Timer, linearDamping
 
 ## [Challenges](https://www.hackingwithswift.com/read/17/5/wrap-up):
 1. Stop the player from cheating by lifting their finger and tapping elsewhere – try implementing touchesEnded() to make it work.
