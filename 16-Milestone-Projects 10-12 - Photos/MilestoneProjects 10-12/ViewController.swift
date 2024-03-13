@@ -56,9 +56,9 @@ class ViewController: UITableViewController, UIImagePickerControllerDelegate, UI
             if let index = indexPath {
                 print("gesture tapped")
                 
-                let ac = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+                let ac = UIAlertController(title: "Delete Item", message: "Selected item will be delete", preferredStyle: .alert)
                 ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
-                ac.addAction(UIAlertAction(title: "Delete Photo", style: .default, handler: { [weak self] _ in
+                ac.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { [weak self] _ in
                     self?.captions.remove(at: index.row)
                     self?.images.remove(at: index.row)
                     self?.save()
@@ -75,7 +75,7 @@ class ViewController: UITableViewController, UIImagePickerControllerDelegate, UI
     @objc func clearDefaults() {
         let ac = UIAlertController(title: nil, message: "Your photos will delete, are you sure?", preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
-        ac.addAction(UIAlertAction(title: "Delete", style: .default, handler: { [weak self] _ in
+        ac.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { [weak self] _ in
             self?.captions.removeAll()
             self?.images.removeAll()
             self?.save()
@@ -87,7 +87,7 @@ class ViewController: UITableViewController, UIImagePickerControllerDelegate, UI
     @objc func addImage() {
         let picker = UIImagePickerController()
         picker.allowsEditing = true
-        picker.sourceType = .camera
+//        picker.sourceType = .camera
         picker.delegate = self
         present(picker, animated: true)
     }
@@ -176,6 +176,15 @@ class ViewController: UITableViewController, UIImagePickerControllerDelegate, UI
         if let savedData = try? encoder.encode(captions) {
             let defaults = UserDefaults.standard
             defaults.set(savedData, forKey: "savedCaptions")
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            captions.remove(at: indexPath.row)
+            images.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+            save()
         }
     }
     

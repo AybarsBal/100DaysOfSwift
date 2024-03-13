@@ -92,6 +92,7 @@ class ViewController: UITableViewController {
         if editingStyle == .delete {
             shoppingList.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
+            save()
         }
     }
     
