@@ -1,17 +1,18 @@
-# Project 9 - Grand Central Dispatch
+# Project 8 - Swifty Words
 
-https://www.hackingwithswift.com/100/39
+https://www.hackingwithswift.com/100/36
 
 ## Topics
-Grand Central Dispatch, Quality of Service Queues(QoS), performSelector()
+Text Alignment, Layout Margins, UIFont, addTarget(), enumerated(), joined(), replacingOccurrences()
 
-## [Challenges](https://www.hackingwithswift.com/read/9/6/wrap-up):
-1. Modify project 1 so that loading the list of NSSL images from our bundle happens in the background. Make sure you call reloadData() on the table view once loading has finished!
-2. Modify project 8 so that loading and parsing a level takes place in the background. Once you’re done, make sure you update the UI on the main thread!
-3. Modify project 7 so that your filtering code takes place in the background. This filtering code was added in one of the challenges for the project, so hopefully you didn’t skip it!
-
+## [Challenges](https://www.hackingwithswift.com/read/8/6/wrap-up):
+1. Use the techniques you learned in project 2 to draw a thin gray line around the buttons view, to make it stand out from the rest of the UI.
+2. If the user enters an incorrect guess, show an alert telling them they are wrong. You’ll need to extend the submitTapped() method so that if firstIndex(of:) failed to find the guess you show the alert.
+3. Try making the game also deduct points if the player makes an incorrect guess. Think about how you can move to the next level – we can’t use a simple division remainder on the player’s score any more, because they might have lost some points.
 
 ## Screenshots
 
 ![screenshot1](screenshots/Screenshot1.png)
 ![screenshot2](screenshots/Screenshot2.png)
+![screenshot3](screenshots/Screenshot3.png)
+![screenshot4](screenshots/Screenshot4.png)
