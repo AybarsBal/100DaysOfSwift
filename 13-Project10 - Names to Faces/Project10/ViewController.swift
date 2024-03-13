@@ -117,6 +117,10 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
     // MARK: - Day93 - Challenge 3
     
     @objc func secretMode() {
+        let ac = UIAlertController(title: "Secret Mode Active", message: "Please authenticate to continue", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "OK", style: .cancel))
+        present(ac, animated: true)
+        
         hidedPeople = people
         people.removeAll(keepingCapacity: true)
         collectionView.reloadData()
