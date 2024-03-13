@@ -32,6 +32,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var leftedBall = 5 {
         didSet {
             ballLeft.text = "\(leftedBall) Balls left!"
+            
+            if leftedBall <= 0 {
+                ballLeft.text = "Game Over"
+                ballLeft.colorBlendFactor = 1
+                ballLeft.color = .red
+            }
         }
     }
     
@@ -194,4 +200,5 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             nodeB.removeFromParent()
         }
     }
+    
 }
