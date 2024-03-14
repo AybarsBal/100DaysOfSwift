@@ -35,4 +35,3 @@ Here are some hints in case you hit a problem:
 ![screenshot3](screenshots/Screenshot3.png)
 ![screenshot4](screenshots/Screenshot4.png)
 ![screenshot5](screenshots/Screenshot5.png)
-![screenshot6](screenshots/Screenshot6.png)
