@@ -10,15 +10,24 @@ import UIKit
 class MainViewController: UITableViewController {
     
     var notes = [Note]()
+    var noteCount = 0 {
+        didSet {
+            totalNotes.title = "\(noteCount) Notes"
+        }
+    }
+    var totalNotes: UIBarButtonItem!
     
     override func viewDidLoad() {
         title = "Notes"
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.isToolbarHidden = false
         navigationController?.toolbar.tintColor = .systemYellow
+        
         let doneBtn = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: #selector(didComposeTapped))
         let spacer = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
-        toolbarItems = [spacer, doneBtn]
+        totalNotes = UIBarButtonItem(title: "0 Notes", style: .plain, target: self, action: nil)
+        totalNotes.customView?.isUserInteractionEnabled = false
+        toolbarItems = [spacer,totalNotes,spacer, doneBtn]
         
         loadNotes()
     }
@@ -76,6 +85,8 @@ class MainViewController: UITableViewController {
             let defaults = UserDefaults.standard
             defaults.set(savedNote, forKey: "savedNotes")
         }
+        
+        noteCount = notes.count
     }
     
     func loadNotes() {
@@ -94,6 +105,14 @@ class MainViewController: UITableViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         save()
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            notes.remove(at: indexPath.section)
+            tableView.deleteSections([indexPath.section], with: .automatic)
+            save()
+        }
     }
 }
 
