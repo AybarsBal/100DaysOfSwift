@@ -2,7 +2,7 @@
 
 https://www.hackingwithswift.com/100/82
 
-[Code to this project](https://github.com/AybarsBal/100DaysOfSwift/blob/master/32-Milestone-Projects%2022-24/Milestone-Projects%2022-24.playgroundbook/Edits/UserEdits.diffpack/Chapters/Chapter1.playgroundchapter/Pages/My%20Playground.playgroundpage/main.swift.delta)
+[Code of this project](https://github.com/AybarsBal/100DaysOfSwift/blob/master/32-Milestone-Projects%2022-24/Milestone-Projects%2022-24.playgroundbook/Edits/UserEdits.diffpack/Chapters/Chapter1.playgroundchapter/Pages/My%20Playground.playgroundpage/main.swift.delta)
 
 ## [Challenge](https://www.hackingwithswift.com/guide/9/3/challenge):
 Your challenge this time is not to build a project from scratch. Instead, I want you to implement three Swift language extensions using what you learned in project 24. I’ve ordered them easy to hard, so you should work your way from first to last if you want to make your life easy!
