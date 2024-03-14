@@ -22,6 +22,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         locationManager?.requestAlwaysAuthorization()
         
         view.backgroundColor = .gray
+        
+        
     }
 
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
@@ -35,23 +37,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func startScanning() {
-        let uuid = UUID(uuidString: "2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6")!
-        let beaconRegion = CLBeaconRegion(uuid: uuid, major: 123, minor: 456, identifier: "MyBeacon")
+        let uuid = UUID(uuidString: "7b44b47b-52a1-5381-90c2-f09b6838c5d4")!
+        let beaconRegion = CLBeaconRegion(uuid: uuid, major: 123, minor: 456, identifier: "GemTot iOS")
         
         locationManager?.startMonitoring(for: beaconRegion)
         locationManager?.startRangingBeacons(in: beaconRegion)
         
     }
-    
-//    func startScanning() {
-//        let uuid = UUID(uuidString: "954FBC91-620E-4B5A-86F7-1F31A0054194")!
-//
-//        let beaconIdentity = CLBeaconIdentityConstraint(uuid: uuid, major: 123, minor: 456)
-//        let beaconRegion = CLBeaconRegion(beaconIdentityConstraint: beaconIdentity, identifier: "MyBeacon")
-//
-//        locationManager?.startMonitoring(for: beaconRegion)
-//        locationManager?.startRangingBeacons(satisfying: beaconIdentity)
-//    }
     
     func update(distance: CLProximity) {
         UIView.animate(withDuration: 0.8) {
