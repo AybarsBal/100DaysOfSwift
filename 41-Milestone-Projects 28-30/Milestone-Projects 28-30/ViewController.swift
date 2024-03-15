@@ -125,6 +125,7 @@ class ViewController: UICollectionViewController {
             let ac = UIAlertController(title: "Times Up!", message: "Try to be faster this time", preferredStyle: .alert)
             ac.addAction(UIAlertAction(title: "Play Again", style: .default, handler: { [weak self] _ in
                 let time = self?.remainingTime
+                self?.countDownTimer.invalidate()
                 self?.playAgain()
             }))
             ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
@@ -133,6 +134,7 @@ class ViewController: UICollectionViewController {
             let ac = UIAlertController(title: "Game Finished", message: "All cards has matched", preferredStyle: .alert)
             ac.addAction(UIAlertAction(title: "Play Again", style: .default, handler: { [weak self] _ in
                 let time = self?.remainingTime
+                self?.countDownTimer.invalidate()
                 self?.playAgain()
             }))
             ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
