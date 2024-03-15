@@ -7,8 +7,6 @@
 		<string>_hws-project25._tcp</string>
 		<string>_hws-project25._ucp</string>
 	</array>
-	<key>NSLocalNetworkUsageDescription</key>
-	<string>Need your permission to peer</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

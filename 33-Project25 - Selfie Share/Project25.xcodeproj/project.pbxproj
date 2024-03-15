@@ -295,6 +295,7 @@
 				DEVELOPMENT_TEAM = 85FPBAZ99R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Project25/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Need your permission to peer";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -323,6 +324,7 @@
 				DEVELOPMENT_TEAM = 85FPBAZ99R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Project25/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Need your permission to peer";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
