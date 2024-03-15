@@ -32,7 +32,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         case portal = 32 // Challenge 3
     }
     
-    var currentLevel = 1 // Challenge 2
+    var currentLevel = 4 // Challenge 2
     var portals = [SKSpriteNode]() // Challenge 3
     var isPortalsActive = true // Challenge 3
     
@@ -58,6 +58,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         motionManager = CMMotionManager()
         motionManager.startAccelerometerUpdates()
+        
     }
     
     func loadLevel() {
