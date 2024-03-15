@@ -122,7 +122,7 @@ class ViewController: UICollectionViewController {
         countDownTimer.invalidate()
         
         if remainingTime == 0 {
-            let ac = UIAlertController(title: "Times Up!", message: "Try to be faster this time", preferredStyle: .alert)
+            let ac = UIAlertController(title: "Times Up!", message: "Try to be faster next time", preferredStyle: .alert)
             ac.addAction(UIAlertAction(title: "Play Again", style: .default, handler: { [weak self] _ in
                 let time = self?.remainingTime
                 self?.countDownTimer.invalidate()
