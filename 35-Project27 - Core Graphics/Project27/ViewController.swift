@@ -16,13 +16,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        drawRectangle()
     }
     
     @IBAction func redrawTapped(_ sender: UIButton) {
         currentDrawType += 1
         
-        if currentDrawType > 5 {
+        if currentDrawType > 7 {
             currentDrawType = 0
         }
         
@@ -44,6 +43,12 @@ class ViewController: UIViewController {
             
         case 5:
             drawImagesAndText()
+          
+        case 6:
+            drawFace()
+            
+        case 7:
+            drawTwin()
             
         default:
             break
@@ -172,6 +177,84 @@ class ViewController: UIViewController {
             mouse?.draw(at: CGPoint(x: 300, y: 150))
         }
         imageView.image = img
+    }
+    
+    //challenge1
+    func drawFace() {
+        let renderer = UIGraphicsImageRenderer(size: CGSize(width: 512, height: 512))
+        
+        let image = renderer.image { ctx in
+            let rectangle = CGRect(x: 0, y: 0, width: 512, height: 512).insetBy(dx: 10, dy: 10)
+            let leftEye = CGRect(x: 155, y: 100, width: 60, height: 85)
+            let rightEye = CGRect(x: 285, y: 100, width: 60, height: 85)
+            let mouth = CGRect(x: 195, y: 275, width: 120, height: 150)
+            
+            ctx.cgContext.setFillColor(UIColor.systemYellow.cgColor)
+            ctx.cgContext.addEllipse(in: rectangle)
+            ctx.cgContext.drawPath(using: .fillStroke)
+            
+            ctx.cgContext.setFillColor(UIColor.black.cgColor)
+            ctx.cgContext.addEllipse(in: leftEye)
+            ctx.cgContext.drawPath(using: .fillStroke)
+            
+            ctx.cgContext.setFillColor(UIColor.black.cgColor)
+            ctx.cgContext.addEllipse(in: rightEye)
+            ctx.cgContext.drawPath(using: .fillStroke)
+            
+            ctx.cgContext.setFillColor(UIColor.black.cgColor)
+            ctx.cgContext.addEllipse(in: mouth)
+            ctx.cgContext.drawPath(using: .fillStroke)
+        }
+        
+        imageView.image = image
+    }
+    
+    // challenge2
+    func drawTwin() {
+        let renderer = UIGraphicsImageRenderer(size: CGSize(width: 512, height: 512))
+        
+        let image = renderer.image { ctx in
+            ctx.cgContext.translateBy(x: 20, y: 100)
+            ctx.cgContext.setLineCap(.round)
+            ctx.cgContext.setLineWidth(5)
+            ctx.cgContext.setStrokeColor(UIColor.black.cgColor)
+            
+            //Draw T
+            ctx.cgContext.move(to: CGPoint(x: 60, y: 5))
+            ctx.cgContext.addLine(to: CGPoint(x: 130, y: 5))
+            ctx.cgContext.move(to: CGPoint(x: 95, y: 70))
+            ctx.cgContext.addLine(to: CGPoint(x: 95, y: 5))
+            
+            //Draw W
+            ctx.cgContext.move(to: CGPoint(x: 145, y: 5))
+            ctx.cgContext.addLine(to: CGPoint(x: 162, y: 70))
+            ctx.cgContext.move(to: CGPoint(x: 162, y: 70))
+            ctx.cgContext.addLine(to: CGPoint(x: 177, y: 5))
+            ctx.cgContext.move(to: CGPoint(x: 177, y: 5))
+            ctx.cgContext.addLine(to: CGPoint(x: 192, y: 70))
+            ctx.cgContext.move(to: CGPoint(x: 192, y: 70))
+            ctx.cgContext.addLine(to: CGPoint(x: 207, y: 5))
+            
+            //Draw I
+            ctx.cgContext.move(to: CGPoint(x: 222, y: 5))
+            ctx.cgContext.addLine(to: CGPoint(x: 272, y: 5))
+            ctx.cgContext.move(to: CGPoint(x: 247, y: 5))
+            ctx.cgContext.addLine(to: CGPoint(x: 247, y: 70))
+            ctx.cgContext.move(to: CGPoint(x: 222, y: 70))
+            ctx.cgContext.addLine(to: CGPoint(x: 272, y: 70))
+            
+            //Draw N
+            ctx.cgContext.move(to: CGPoint(x: 287, y: 5))
+            ctx.cgContext.addLine(to: CGPoint(x: 287, y: 70))
+            ctx.cgContext.move(to: CGPoint(x: 287, y: 5))
+            ctx.cgContext.addLine(to: CGPoint(x: 337, y: 70))
+            ctx.cgContext.move(to: CGPoint(x: 337, y: 70))
+            ctx.cgContext.addLine(to: CGPoint(x: 337, y: 5))
+            
+            ctx.cgContext.strokePath()
+        }
+        
+        imageView.image = image
     }
 }
 
