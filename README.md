@@ -1,5 +1,5 @@
 # 100DaysOfSwift
-This is my code from all the projects in my 100 Days Of Swift
+100DaysOfSwift Projects & Challenges by Paul Hudson
 
 https://www.hackingwithswift.com/100
 
