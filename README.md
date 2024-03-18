@@ -48,4 +48,4 @@ https://www.hackingwithswift.com/100
 | [Milestone: Projects 28-30](https://github.com/AybarsBal/100DaysOfSwift/tree/master/41-Milestone-Projects%2028-30%20-%20Pairs) - Pairs | ![screen1](https://github.com/AybarsBal/100DaysOfSwift/blob/master/41-Milestone-Projects%2028-30%20-%20Pairs/screenshots/small/Screenshot1.png) ![screen2](https://github.com/AybarsBal/100DaysOfSwift/blob/master/41-Milestone-Projects%2028-30%20-%20Pairs/screenshots/small/Screenshot2.png) ![screen3](https://github.com/AybarsBal/100DaysOfSwift/blob/master/41-Milestone-Projects%2028-30%20-%20Pairs/screenshots/small/Screenshot3.png) ![screen4](https://github.com/AybarsBal/100DaysOfSwift/blob/master/41-Milestone-Projects%2028-30%20-%20Pairs/screenshots/small/Screenshot4.png) ![screen5](https://github.com/AybarsBal/100DaysOfSwift/blob/master/41-Milestone-Projects%2028-30%20-%20Pairs/screenshots/small/Screenshot5.png) ![screen6](https://github.com/AybarsBal/100DaysOfSwift/blob/master/41-Milestone-Projects%2028-30%20-%20Pairs/screenshots/small/Screenshot6.png) |
 
 ## Completion
-
+![screen1](https://github.com/AybarsBal/100DaysOfSwift/blob/master/certificate.jpg)
